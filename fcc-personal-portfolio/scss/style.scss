@@ -1,0 +1,333 @@
+// GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css?family=Aldrich|Audiowide|Orbitron:400, 700");
+
+/*
+font-family: 'Audiowide', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Orbitron', sans-serif;
+*/
+
+// VAIRABLES
+:root {
+  --bg-color: #faf9f8;
+  --bg-color-darker: #333132;
+  --bg-color-dark: #babbbd;
+  --header-color: #fc5500;
+  --sub-header-color: #a3431a;
+  --font-color: #58427c;
+
+  /* 
+  --JET: #333132;
+  --GRAY (X11 GRAY): #BABBBD;
+  --WILLPOWER ORANGE: #FC5500;
+  --SNOW: #FAF9F8;
+  --CHINESE RED: #A3431A;
+  --CYBER GRAPE: #58427C;
+ */
+}
+
+// BODY, HTML STYLES
+body {
+  background-color: var(--bg-color, white);
+  color: var(--font-color, black);
+  font-family: "Aldrich", sans-serif;
+  margin: 0px;
+  max-width: 2000px;
+}
+
+// NAVBAR STYLES
+#navbar {
+  background-color: var(--bg-color-dark, gray);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  border-bottom: 1px solid var(--bg-color-darker, gray);
+}
+
+#navbar ul {
+  margin-right: 2em;
+}
+
+#navbar li {
+  text-align: center;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  color: var(--font-color, purple);
+  text-decoration: none;
+  margin-right: 0em;
+  padding: 0.25em 1em;
+}
+
+#navbar a:hover {
+  background-color: var(--bg-color-darker, darkgray);
+  color: var(--header-color, orange);
+}
+
+// WELCOME SECTION STYLES
+#welcome-section {
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section h1,
+h2 {
+  margin: 1em;
+  font-size: 1.25em;
+  font-family: "Audiowide", cursive;
+  color: var(--header-color, orange);
+}
+
+#welcome-section h3 {
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.2;
+  padding: 0em 1em 1em 1em;
+  font-size: 1em;
+}
+
+// PROJECT SECTION STYLES
+#projects {
+  background-color: var(--bg-color-dark, gray);
+  padding: 1em 0em 3em 0em;
+  text-align: center;
+  border: 5px solid var(--font-color, purple);
+  border-radius: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-section-title {
+  font-style: bold;
+  margin: 2em 1em 2em 1em;
+  background-color: var(--bg-color, white);
+}
+
+#project-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 1rem 0rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 2em;
+}
+
+.project-title {
+  font-style: bold;
+  background-color: var(--bg-color, white);
+  height: 550px;
+}
+
+.project-title h3 {
+  color: var(--font-color, purple);
+  margin: 2em 2em;
+}
+
+.project-title a {
+  text-decoration: none;
+}
+
+.sub-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  color: var(--sub-header-color, red);
+}
+
+.borders {
+  position: relative;
+  border: 2px solid var(--header-color, orange);
+  border-radius: 3em;
+}
+
+.borders:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid var(--font-color, purple);
+  border-radius: 3em;
+}
+
+// PROFILE SECTION STYLES
+#profile {
+  text-align: center;
+  background-color: var(--bg-color, white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#profile h3 {
+  color: var(--font-color, purple);
+}
+
+#profile p {
+  color: var(--sub-header-color);
+}
+
+// PROFILE BUTTON STYLES
+#button-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 1em 0rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 2em;
+  margin-bottom: 2em;
+}
+
+.button {
+  line-height: 1;
+  border: 2px solid var(--bg-color-dark, LightGray);
+  border-radius: 3em;
+  cursor: pointer;
+  background-color: var(--bg-color, white);
+}
+
+.button:hover {
+  background-color: var(--bg-color-dark, LightGray);
+  border: 2px solid var(--bg-color-darker, gray);
+}
+
+.button a {
+  text-decoration: none;
+}
+
+// FOOTER STYLES
+footer {
+  background-color: var(--bg-color-darker, gray);
+  color: var(--bg-color, white);
+  padding: 0.5em;
+  text-align: center;
+}
+
+// MEDIA QUERY - SMALL - LANDSCAPE - MOVES NAV BAR TO HORIZONTAL AND MAKES FOMTS BIGGER
+@media only screen and (min-width: 400px) {
+  #navbar li {
+    float: right;
+    margin-bottom: 15px;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.75em;
+  }
+
+  #welcome-section h3 {
+    font-size: 1.5em;
+  }
+
+  .project-section-title {
+    font-size: 1.5em;
+  }
+
+  #profile-container h2 {
+    font-size: 1.75em;
+  }
+}
+
+// MEDIA QUERY - LARGE - ADD PADDING TO NAV LI - ADDS BACKGROUND IMAGE TO WELCOME AND PROFILE SECTION AND MAKES FONT BIGGER
+@media only screen and (min-width: 1100px) {
+  // NAV SECTION WITH MEDIA
+  #navbar a {
+    padding: 0.5em 2em;
+  }
+
+  // WELCOME SECTION WITH MEDIA
+  #welcome-section {
+    background-image: url("https://4.bp.blogspot.com/-JxwoMkoIeao/W-hPO3jWY5I/AAAAAAAAL5k/7T-6YsbK9ykDYdhCxd_LWXrju9EnCWbqwCLcBGAs/s1600/Astronaut2%2BMy%2BFav%2Blg.png");
+    background-color: var(--bg-color, white);
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  #welcome-secton-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  #welcome-section h1 {
+    font-size: 3.5em;
+    text-shadow: -1px -1px 0 #333132, 1px -1px 0 #333132, -1px 1px 0 #333132,
+      1px 1px 0 #333132, -2px -2px 0 #333132, 2px -2px 0 #333132, -2px 2px 0 #333132,
+      2px 2px 0 #333132;
+    letter-spacing: 1px;
+  }
+
+  #welcome-section h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  // PROJECT SECTION WITH MEDIA
+  .project-section-title {
+    letter-spacing: 1px;
+    font-size: 2em;
+    margin: 0.5em;
+    text-shadow: -1px -1px 0 #333132, 1px -1px 0 #333132, -1px 1px 0 #333132,
+      1px 1px 0 #333132, -2px -2px 0 #333132, 2px -2px 0 #333132, -2px 2px 0 #333132,
+      2px 2px 0 #333132;
+    color: var(--header-color, orange);
+  }
+
+  // PROFILE SECTION WITH MEDIA
+  #profile {
+    background-image: url("https://4.bp.blogspot.com/-LenDMMeJbBU/W-reuHQYKbI/AAAAAAAAL6A/Jzplrhwb1UUZM6QT9ixC-bZdcBhU1v-0ACLcBGAs/s1600/Cyborg2%2BMy%2BFav.png");
+    background-color: var(--bg-color, white);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+
+  #profile-container {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  #profile h2 {
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-shadow: -1px -1px 0 #333132, 1px -1px 0 #333132, -1px 1px 0 #333132,
+      1px 1px 0 #333132, -2px -2px 0 #333132, 2px -2px 0 #333132, -2px 2px 0 #333132,
+      2px 2px 0 #333132;
+    color: var(--header-color, orange);
+  }
+
+  #button-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 2em;
+  }
+
+  .button {
+    width: 15em;
+  }
+}

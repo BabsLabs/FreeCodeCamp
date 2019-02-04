@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/BabsLabs/pen/rqRRdj.
+
+ This is my "Little Sweetie" Product landing page for the Responsive Web Design portion of Free Code Camp. In this project I did not use the CSS Grid features but instead chose to practice using Flex instead. Note: In compliance with intergalactic law  don't actually sell Ray Guns and this is for demonstrative / educational purposes only.

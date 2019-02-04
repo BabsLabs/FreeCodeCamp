@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Sloth Name Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- title -->
+<h1 id="title">Sloth Name Survey</h1>
+
+<!-- form description -->
+<p id="description">What do you think is the best name for a sloth?</p>
+
+<!--  form contianer start  -->
+<div class="form-container">
+
+  <!-- form start -->
+  <form action="_blank" id="survey-form" method="get">
+
+    <!-- sloth name container -->
+    <div class="sloth-name-container">
+
+      <!-- radio buttons -->
+      <div class="element">
+        <p>Choose the best sloth name. You can only pick one...</p>
+
+        <!-- radio container -->
+        <div class="radio-container">
+
+          <div>
+            <input type="radio" id="buttons" name="sloth_name" value="buttons" class="radiobtn" />Buttons</input>
+          </div>
+
+          <div>
+            <input type="radio" id="elvis" name="sloth_name" value="elvis" class="radiobtn" />Elvis</input>
+          </div>
+
+          <div>
+            <input type="radio" id="george" name="sloth_name" value="george" class="radiobtn" />George</input>
+          </div>
+
+          <div>
+            <input type="radio" id="monty" name="sloth_name" value="monty" class="radiobtn" />Monty</input>
+          </div>
+
+          <div>
+            <input type="radio" id="pokey" name="sloth_name" value="pokey" class="radiobtn" />Pokey</input>
+          </div>
+
+          <div>
+            <input type="radio" id="stevie" name="sloth_name" value="stevie" class="radiobtn" />Stevie</input>
+          </div>
+
+          <div>
+            <input type="radio" id="waldo" name="sloth_name" value="waldo" class="radiobtn" />Waldo</input>
+          </div>
+
+          <div>
+            <input type="radio" id="other" name="sloth_name" value="other" class="radiobtn" />Other</input>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- textarea -->
+      <div id="text_area" class="element">
+        <label for="text_area_example"></label>
+        <textarea name="text_area_example" id="text_area_example" rows="4" cols="25" maxlength="250" class="input-field">If you chose "Other" please enter your sloth name here...</textarea>
+      </div>
+
+      <!-- checkboxes -->
+      <div class="element">
+
+        <p>Choose Surnames, Prefixes, and Suffixes for the sloth (select all that you would like)</p>
+
+        <!-- checkbox container -->
+        <div class="checkbox-container">
+
+          <div>
+            <input type="checkbox" id="md" name="checkbox_describer" value="md" />
+            <label for="md">M.D.</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="sir." name="checkbox_describer" value="sir" />
+            <label for="sir">Sir </label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="the_third" name="checkbox_describer" value="the_third" />
+            <label for="the_third">the Third</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="royal" name="checkbox_describer" value="royal" />
+            <label for="royal">The Royal</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="none" name="checkbox_describer" value="none" />
+            <label for="none">None</label>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end of sloth name container -->
+    </div>
+
+    <!-- contant info container -->
+    <div class="contact-info-container">
+
+      <!-- contact info describer -->
+      <p>Please give a little information about yourself so we know you are human and not one of those mischevious foxes... </p>
+
+      <!-- name -->
+      <div class="element">
+        <div class="labels">
+          <label id="name-label" for="name">Name: </label>
+        </div>
+        <div>
+          <input type="text" id="name" name="name" placeholder="Name" class="input-field" required>
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="element">
+        <div class="labels">
+          <label id="email-label" for="email">Email: </label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email" class="input-field" required>
+        </div>
+      </div>
+
+      <!-- number -->
+      <div class="element">
+        <div class="labels">
+          <label id="number-label" for="number-label" class="input-field">Age: </label>
+        </div>
+        <div>
+          <input type="number" id="number" name="number" min="1" max="150" placeholder="Age" class="input-field" required>
+        </div>
+      </div>
+
+      <!-- dropdown -->
+      <div class="element">
+        <div class="labels">
+          <label for="dropdown">Which of these is your favorite animal? </label>
+        </div>
+        <div>
+          <select id="dropdown" required>
+        <option value="bighorn_sheep">Bighorn Sheep</option>
+        <option value="diamondback_rattlesnake">Diamondback Rattlesnake</option>
+        <option value="sea_otter">Sea Otter</option>
+        <option value="harbor_seal">Harbor Seal</option>
+        <option value="indian_elephant">Indian Elephant</option>
+        <option value="two_toed_sloth">Two-Toed Sloth</option>
+        <option value="spider_monkey">Spider Monkey</option>
+      </select>
+        </div>
+      </div>
+
+      <!-- end of contact info divider -->
+    </div>
+
+    <!-- submit button -->
+    <div class="submitbtn">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+
+    <!-- end of form -->
+  </form>
+
+  <!-- end of container -->
+</div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

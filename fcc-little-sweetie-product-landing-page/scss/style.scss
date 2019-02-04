@@ -1,0 +1,211 @@
+// IMPORT GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:400,600,700|Yesteryear|Atomic+Age");
+// font-family: 'Yesteryear', cursive;
+// font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Acme', sans-serif;
+// font-family: 'Atomic Age', sans-serif;
+
+// DEFINE VARIABLES
+:root {
+  --old-rose: #b74134;
+  --indian-red: #cd6657;
+  --dim-gray: #3e3637;
+  --light-gray: #cdcecd;
+  --old-rose2: #9b5d4e;
+  --tanish: #f0eadd;
+  --logo-dark-color: #4d4c4e;
+}
+
+// BODY STYLES
+body {
+  background-color: var(--tanish, white);
+  color: var(--dim-gray, black);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+// HEADER STYLES
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 1em;
+  background-color: var(--tanish);
+}
+
+#header-img {
+  max-height: 50%;
+  margin: 1em 0em;
+}
+
+// NAV BAR STYLES
+#nav-bar {
+  text-align: center;
+}
+
+// NAV BAR LINKS
+#nav-bar a {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#nav-bar li {
+  taxt-align: center;
+}
+
+#nav-bar li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--old-rose, red);
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar a:hover {
+  color: var(--tanish, black);
+  background-color: var(--logo-dark-color, purple);
+}
+
+// MAIN AND CONTAINER STYLES START HERE
+#container {
+  padding-top: 320px;
+  // background-image: url("https://pre00.deviantart.net/8b24/th/pre/i/2011/132/d/f/seamless_paper_tile_1_by_goblin_stock-d3g5mrr.jpg");
+  // background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/tan-seamless-paper-textures-4-780x780.jpg")
+}
+
+#product-container {
+  background-color: var(--light-gray, white);
+  border: 1px dashed var(--logo-dark-color, black);
+}
+
+// TITLE STYLES
+
+#title {
+  padding-top: 0em;
+}
+
+#title h1 {
+  font-size: 3.5em;
+  line-height: 105%;
+  font-weight: 400;
+  color: var(--old-rose, red);
+  text-shadow: 1px 2px var(--dim-gray, black);
+  padding: 1em 0.5em;
+  font-family: "Yesteryear", cursive;
+  text-align: center;
+  margin: -0.5em 0em;
+}
+
+#title h2 {
+  text-align: center;
+  padding: 0em 1em;
+  margin: -0.1em;
+}
+
+#by {
+  font-family: "Atomic Age", sans-serif;
+  color: var(--dim-gray, gray);
+}
+
+#babs-labs {
+  font-family: "Acme", sans-serif;
+  color: var(--logo-dark-color, gray);
+  font-size: 2em;
+}
+
+// SWEETIE IMAGE
+#sweetie-image {
+  width: 100%;
+  max-width: 100%;
+  margin: 1em 0em 1em 0em;
+}
+
+// COPY
+#copy {
+  margin: 0em 1em;
+}
+
+// FEATURES
+.sub-heading {
+  font-family: "Atomic Age";
+  text-align: center;
+  color: var(--old-rose2, red);
+  text-shadow: 1px 1px var(--dim-gray, black);
+}
+
+#features {
+  background-color: var(--light-gray, white);
+  border: 1px dashed var(--logo-dark-color, black);
+}
+
+#features li {
+  padding: 5px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+// VIDEO
+#video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#video {
+  max-width: 100%;
+}
+
+// PREORDER
+#pre-order {
+  margin: 1em 0em;
+  padding: 0em 1em 1em 1em;
+  background-color: var(--light-gray, white);
+  border: 1px dashed var(--logo-second-color, black);
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+#submit {
+  margin: 0.5em 0em;
+  background-color: var(--tanish, white);
+  border: 1px solid 
+  
+}
+
+// FOOTER
+footer {
+  background-color: var(--old-rose, red);
+  color: var(--tanish, white);
+  padding: 1em;
+  margin: 1em 0em;
+  font-family: "Acme", sans-serif;
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 450px) {
+  #container {
+    padding-top: 150px;
+  }
+  
+  #header-img {
+    float: left;
+  }
+  
+  #nav-bar {
+    float: right;
+  }
+  
+  #nav-bar li {
+    padding: 2px 14px 2px 2px;
+  }
+   
+  
+}

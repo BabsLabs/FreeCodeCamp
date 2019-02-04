@@ -1,0 +1,159 @@
+/* import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Sofadi+One');
+/* font-family: 'Sofadi One', cursive;
+font-family: 'Josefin Sans', sans-serif; */
+
+/* variables */
+:root {
+  --yellowish: #f2dd85;
+  --greenish: #98988b;
+  --grayish: #cccccc;
+  --secondGrayish: #bbbbbb;
+  --thirdGrayish: #aaaaaa;
+}
+
+/* body styles */
+body {
+  background-color: var(--grayish, white);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+/* font styles */
+h1 {
+  font-family: 'Sofadi One', cursive;
+  font-size: 300%;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+}
+
+#description {
+  padding: 0em 1em;
+  font-weight: 700;
+}
+
+/* form contianer styles */
+.form-container {
+  background-color: var(--yellowish, white);
+  padding: 1em 1em;
+}
+
+/* form element styles */
+
+/* sloth name container */
+.sloth-name-container {
+  padding: 0.5em 0em;
+}
+
+/* contact info container */
+.contact-info-container {
+  padding: 0.5em 0em;
+}
+
+/* element */
+.element {
+  margin: 1em 0em;
+}
+
+/* radio buttons */
+.radio-container {
+  text-align: left;
+  margin-left: 3em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.radiobtn {
+  margin-right: 0.5em;
+}
+
+/* checkboxes */
+.checkbox-container {
+  text-align: left;
+  margin-left: 3em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* label */
+.labels {
+  display: inline-block;
+  margin: 0.5em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* input fields */
+.input-field {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+/* dropdown */
+#dropdown {
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+/* submit button */
+#submit {
+  background-color: var(--grayish, white);
+  border: solid 1px var(--greenish, black);
+  border-radius: 0.5em;
+  color: black;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin: 1em 0em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#submit:hover {
+  background-color: var(--secondGrayish, white);
+  border: solid 1px var(--grayish, black);
+  cursor: pointer;
+}
+
+.submitbtn {
+}
+
+/* media query for medium screens*/
+@media only screen and (min-width: 600px) {
+  .radio-container {
+    margin-left: 15em;
+  }
+
+  .checkbox-container {
+    margin-left: 15em;
+  }
+}
+
+/* media query for large screens */
+@media only screen and (min-width: 950px) {
+  
+   .radio-container {
+    margin-left: 30em;
+  }
+
+  .checkbox-container {
+    margin-left: 30em;
+  }
+  
+}
+
+
+/* media query for very large screens */
+@media only screen and (min-width: 1200px) {
+  
+   .radio-container {
+    margin-left: 40em;
+  }
+
+  .checkbox-container {
+    margin-left: 40em;
+  }
+  
+}
